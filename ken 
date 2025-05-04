@@ -1,0 +1,46 @@
+import React from "react";
+import { Bell } from "lucide-react";
+
+const TCSBusPass = () => {
+  return (
+    <div className="min-h-screen bg-gray-100 p-4 flex flex-col items-center">
+      <div className="w-full max-w-sm rounded-2xl shadow-xl bg-white border">
+        {/* Header */}
+        <div className="bg-[#4c2c92] text-white text-center py-3 rounded-t-2xl relative">
+          <h1 className="text-lg font-semibold">Digital Bus Pass</h1>
+          <Bell className="absolute top-3 right-4" size={20} />
+        </div>
+
+        {/* Route Info */}
+        <div className="bg-[#7a5af5] text-white text-center py-4">
+          <p className="text-md font-bold">Poonamallee Bus Terminus</p>
+          <p className="text-lg">⇄</p>
+          <p className="text-md font-bold">Siruseri</p>
+          <p className="text-sm mt-1">Pick Up - 13:00</p>
+        </div>
+
+        {/* Details */}
+        <div className="p-4 text-sm space-y-2">
+          <p><strong>Name:</strong> SHANMATHY BHARATHIRAJA</p>
+          <p><strong>Employee ID:</strong> 2718245</p>
+          <p><strong>Bus Stop Name:</strong> Porur - Stopping @ Porur Round</p>
+          <p><strong>Route Type:</strong> P</p>
+          <p><strong>Start Date:</strong> 01-May-2025</p>
+          <p><strong>End Date:</strong> 31-May-2025</p>
+          <p><strong>Route:</strong> Poonamallee Bus Terminus To Siruseri Via-PORUR</p>
+        </div>
+
+        {/* TCS Logo */}
+        <div className="text-center py-3 border-t border-gray-200">
+          <img
+            src="/images/tcs_logo.svg"
+            alt="TCS Logo"
+            className="mx-auto h-6"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TCSBusPass;
